@@ -16,3 +16,10 @@ func GroupRoutes(e *echo.Echo) {
   e.POST("/group_join")
   e.PUT("/group_exit")
 }
+
+func UserRoutes(e *echo.Echo) {
+  e.GET("/check_user_name")
+  e.POST("/sign_up")
+  e.PUT("/update_user")
+  e.DELETE("/delete_user")
+}
